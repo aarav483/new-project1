@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sellers Admin Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .products {
+            margin-top: 20px;
+        }
+        .section {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Products</h1>
+    <form id="productForm">
+        <label for="price">Selling Price:</label>
+        <input type="text" id="price" name="price">
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="category">Choose a Category:</label>
+        <select id="category" name="category">
+            <option value="electronics">Electronics</option>
+            <option value="food">Food</option>
+            <option value="skincare">Skincare</option>
+        </select>
+        <button type="button" onclick="addProduct()">Add Product</button>
+    </form>
+
+    <div class="products">
+        <div class="section">Electronic Items</div>
+        <ul id="electronics"></ul>
+
+        <div class="section">Food Items</div>
+        <ul id="food"></ul>
+
+        <div class="section">Skincare Items</div>
+        <ul id="skincare"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
